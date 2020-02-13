@@ -1,0 +1,21 @@
+{
+  "name": "hacksoc.co.uk",
+  "version": "1.0.0",
+  "description": "Abertay Ethical Hacking Society",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server",
+    "docker:security": "docker run --rm -e SCAN_URL=\"http://192.168.0.12:8080\" lirantal/is-website-vulnerable:latest",
+    "test:security": "npx start-server-and-test start http://localhost:8080 docker:security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbertayHackers/hacksoc.co.uk.git"
+  },
+  "author": "Abertay Ethical Hacking Society",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbertayHackers/hacksoc.co.uk/issues"
+  },
+  "homepage": "https://hacksoc.co.uk"
+}
